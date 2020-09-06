@@ -1,6 +1,6 @@
 @patientName
 Feature: patientName - PatientMedicalHistoryForm
-  I want to enter my name
+  I want to fill in the patient form
 
   @patName
   Scenario: patientName - PatientMedicalHistoryForm
