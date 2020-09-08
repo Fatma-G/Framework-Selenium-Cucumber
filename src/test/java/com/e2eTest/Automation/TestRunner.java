@@ -12,7 +12,7 @@ import cucumber.api.junit.Cucumber;
 	//	glue = {""},
 		plugin = {"pretty", "html:target/cucumber-html-report"},
 		snippets = SnippetType.CAMELCASE,
-		tags = {("@authentification, @patName")},
+		tags = {("@patName")},
 		monochrome = true
 		)
 

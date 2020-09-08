@@ -1,6 +1,5 @@
 package com.e2eTest.Automation.stepDefinitions;
 
-
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
@@ -15,17 +14,17 @@ import cucumber.api.java.en.When;
 public class AuthentificationStepDef {
 
 	public WebDriver driver;
-	private AuthentificationPage authentificationPage= new AuthentificationPage(driver);
-	
-	public AuthentificationStepDef () {
-		
-		driver= Setup.driver;
+	private AuthentificationPage authentificationPage = new AuthentificationPage(driver);
+
+	public AuthentificationStepDef() {
+
+		driver = Setup.driver;
 	}
-	
+
 	@Given("^open application$")
 	public void openApplication() throws Throwable {
 
-		String url= "https://opensource-demo.orangehrmlive.com/";
+		String url = "https://opensource-demo.orangehrmlive.com/";
 		driver.get(url);
 	}
 
@@ -50,11 +49,23 @@ public class AuthentificationStepDef {
 
 	@Then("^show page Admin$")
 	public void showPageAdmin() throws Throwable {
-	
-		String wlc= AuthentificationPage.welcome.getText();
+
+		String wlc = AuthentificationPage.welcome.getText();
 		Assert.assertTrue(wlc.contains("Welcome"));
+
+		// Assert.assertEquals("Welcome Linda", wlc);
+	}
+
+	@When("^click on Admin$")
+	public void clickOnAdmin() throws Throwable {
 		
-		//Assert.assertEquals("Welcome Linda", wlc);
+		authentificationPage.clickLinkAdmin();
+	}
+
+	@When("^click on Buzz$")
+	public void clickOnBuzz() throws Throwable {
+		
+		authentificationPage.clickLinkBuzz();
 	}
 
 }

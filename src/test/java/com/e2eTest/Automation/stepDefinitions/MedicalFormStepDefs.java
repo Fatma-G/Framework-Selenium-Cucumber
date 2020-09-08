@@ -4,13 +4,13 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 
 import com.e2eTest.Automation.pageObject.MedicalFormPage;
-import com.e2eTest.Automation.util.CommunMethods;
+import com.e2eTest.Automation.util.CommonMethods;
 import com.e2eTest.Automation.util.Setup;
 
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.When;
 
-public class MedicalFormStepDefs extends CommunMethods {
+public class MedicalFormStepDefs {
 	
 	public WebDriver driver;
 	private MedicalFormPage formPage= new MedicalFormPage(driver);
@@ -43,7 +43,7 @@ public class MedicalFormStepDefs extends CommunMethods {
 	@When("^click Submit button$")
 	public void clickSubmitButton() throws Throwable {
 
-		CommunMethods.scrollerBotton();
+		CommonMethods.scrollerBotton();
 		formPage.clickSubmitButton();
 	}
 

@@ -8,5 +8,3 @@ Feature: patientName - PatientMedicalHistoryForm
     When set First name
     And set Last name
     And click Submit button
-    
-  
