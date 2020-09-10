@@ -1,9 +1,9 @@
-package com.e2eTest.Automation.stepDefinitions;
+package com.e2eTest.Automation.printData.stepDifinitions;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 
-import com.e2eTest.Automation.pageObject.PrintDataOutlinePage;
+import com.e2eTest.Automation.printData.pageObjects.PrintDataOutlinePage;
 import com.e2eTest.Automation.util.Setup;
 
 import cucumber.api.java.en.Given;
@@ -26,7 +26,7 @@ public class PrintDataOutlineStepDef {
 
 	@When("^I want to print Full Name \"([^\"]*)\"$")
 	public void iWantToPrintFullName(String fullName) throws Throwable {
-		PageFactory.initElements(driver, PrintDataOutlinePage.class);
+		PageFactory.initElements(driver, PrintDataOutlineStepDef.class);
 		printDataOutlinePage.sendFullName(fullName);
 	}
 

@@ -1,4 +1,4 @@
-package com.e2eTest.Automation.pageObject;
+package com.e2eTest.Automation.authentification.pageObjects;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

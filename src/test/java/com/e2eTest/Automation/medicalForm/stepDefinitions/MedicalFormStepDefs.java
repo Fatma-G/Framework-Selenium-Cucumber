@@ -1,9 +1,9 @@
-package com.e2eTest.Automation.stepDefinitions;
+package com.e2eTest.Automation.medicalForm.stepDefinitions;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 
-import com.e2eTest.Automation.pageObject.MedicalFormPage;
+import com.e2eTest.Automation.medicalForm.pageObjects.MedicalFormPage;
 import com.e2eTest.Automation.util.CommonMethods;
 import com.e2eTest.Automation.util.Setup;
 

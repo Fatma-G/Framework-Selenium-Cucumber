@@ -1,4 +1,4 @@
-package com.e2eTest.Automation.pageObject;
+package com.e2eTest.Automation.printData.pageObjects;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

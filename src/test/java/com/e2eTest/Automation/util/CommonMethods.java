@@ -18,7 +18,7 @@ public class CommonMethods {
 
 		driver = Setup.driver;
 	}
-	
+
 	protected static final Logger logger = LoggerFactory.getLogger(AbstractPage.class);
 
 	public static void scrollerBotton() {
@@ -47,13 +47,13 @@ public class CommonMethods {
 	public void forward() {
 		driver.navigate().forward();
 	}
-	
-	public void readFile() throws IOException {
 
-		prop= new Properties();
-		FileInputStream fis= new FileInputStream("src/test/resources/configs/config.properties");
+	public static void openBrowserWithConfigFile(String url) throws IOException {
+
+		prop = new Properties();
+		FileInputStream fis = new FileInputStream("src/test/resources/configs/config.properties");
 		prop.load(fis);
+		driver.get(prop.getProperty(url));
 	}
-	
-	
+
 }
